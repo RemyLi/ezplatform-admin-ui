@@ -13,6 +13,10 @@
 
 {% block body_class %}ez-content-view ez-has-two-sidebars{% endblock %}
 
+{% block meta %}
+<meta name="CurrentLocationId" content="{{ location.id }}" />
+{% endblock %}
+
 {% block content %}
     <div id="ez-mfu"
          data-parent-content-language="{{ content.versionInfo.initialLanguageCode }}"
